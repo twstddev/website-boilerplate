@@ -1,0 +1,18 @@
+{
+  "name": "Your website name",
+  "version": "0.1.0",
+  "homepage": "website homepage",
+  "authors": [
+    "your name here"
+  ],
+  "description": "Any description that describes your website",
+  "license": "WTFPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

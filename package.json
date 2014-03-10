@@ -1,0 +1,11 @@
+{
+  "name": "your-website-name",
+  "version": "0.1.0",
+  "description": "Any description that describes your website",
+  "repository": {
+    "type": "git",
+    "url": "your website git"
+  },
+  "author": "Your name goes here",
+  "license": "WTFPL"
+}
