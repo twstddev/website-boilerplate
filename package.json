@@ -7,5 +7,9 @@
     "url": "your website git"
   },
   "author": "Your name goes here",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "devDependencies": {
+    "load-grunt-tasks": "~0.4.0",
+    "grunt": "~0.4.3"
+  }
 }
