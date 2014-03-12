@@ -10,7 +10,7 @@ module.exports = {
 			expand : true,
 			cwd : "<%= src %>/templates/pages/",
 			src : "*.hbs", 
-			dest : "<%= dist %>/"
+			dest : "<%= build %>/"
 		} ]
 	}
 };
