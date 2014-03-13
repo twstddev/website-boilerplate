@@ -26,6 +26,11 @@ module.exports = {
 		tasks : [ "newer:copy:favicon" ]
 	},
 
+	javascript : {
+		files : "<%= src %>/**/*.js",
+		tasks : [ "newer:concat" ]
+	},
+
 	development : {
 		files : "<%= build %>/**/*.*",
 		options : {
