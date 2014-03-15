@@ -32,12 +32,11 @@
 
 	// make sure that we fire script 
 	// when DOM is ready
-	/*
 	$( function() {
 		// initialize your object from here
 		Page.init( {
-			param : value
+			param : "value"
 		} );
 	} );
-	*/
+	
 } )();

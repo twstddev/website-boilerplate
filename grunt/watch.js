@@ -28,7 +28,7 @@ module.exports = {
 
 	javascript : {
 		files : "<%= src %>/**/*.js",
-		tasks : [ "newer:concat" ]
+		tasks : [ "newer:concat:js" ]
 	},
 
 	vendorjs : {

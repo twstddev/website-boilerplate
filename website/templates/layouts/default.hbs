@@ -23,7 +23,13 @@
 			{{html.title}} {{#if title}} - {{title}} {{/if}}
 		</title>
 
-		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="vendorlibs/jquery/jquery.js"></script>
+		<script type="text/javascript" src="vendorlibs/jquery-migrate/jquery-migrate.js"></script>
+		<script type="text/javascript" src="vendorlibs/modernizr/modernizr.js"></script>
+
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="vendorlibs/selectivizr/selectivizr.js"></script>
+	<![endif]-->
 	</head>
 	<body>
 		{{> header}}
