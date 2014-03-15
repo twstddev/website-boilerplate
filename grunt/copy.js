@@ -18,5 +18,24 @@ module.exports = {
 		cwd : "<%= src %>/downloads/",
 		src : "**/*.*",
 		dest : "<%= build %>/downloads"
+	},
+
+	vendorjs : {
+		expand: true,
+		cwd : "<%= src %>/vendorlibs",
+		src : [ 
+			"jquery/jquery.js",
+			"jquery-migrate/jquery-migrate.js",
+			"selectivizr/selectivizr.js",
+			"modernizr/modernizr.js"
+		],
+		dest : "<%= build %>/vendorlibs"
+	},
+
+	vendorcss : {
+		expand : true,
+		cwd : "<%= src %>/vendorlibs",
+		src : [],
+		dest : "<%= build %>/vendorlibs"
 	}
 };

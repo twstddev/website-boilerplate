@@ -31,6 +31,16 @@ module.exports = {
 		tasks : [ "newer:concat" ]
 	},
 
+	vendorjs : {
+		files : "<%= src %>/vendorlibs/**/*.js",
+		tasks : [ "newer:copy:vendorjs" ]
+	},
+
+	vendorcss : {
+		files : "<%= src %>/vendorlibs/**/*.css",
+		tasks : [ "newer:copy:vendorcss" ]
+	},
+
 	development : {
 		files : "<%= build %>/**/*.*",
 		options : {
