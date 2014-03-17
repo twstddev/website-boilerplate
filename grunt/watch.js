@@ -31,6 +31,11 @@ module.exports = {
 		tasks : [ "newer:concat:js" ]
 	},
 
+	sass : {
+		files : "<%= src %>/sass/**/*.scss",
+		tasks : [ "compass" ]
+	},
+
 	vendorjs : {
 		files : "<%= src %>/vendorlibs/**/*.js",
 		tasks : [ "newer:copy:vendorjs" ]
