@@ -18,4 +18,18 @@ module.exports = function( grunt ) {
 			]
 		}
 	} );
+
+	grunt.registerTask( "build", [
+		"copy",
+		"assemble",
+		"compass",
+		"concat:js"
+	] );
+
+	grunt.registerTask( "development", [
+		"clean",
+		"build",
+		"concurrent"
+	] );
+
 }
