@@ -37,5 +37,12 @@ module.exports = {
 		cwd : "<%= src %>/vendorlibs",
 		src : [],
 		dest : "<%= build %>/vendorlibs"
+	},
+
+	dist : {
+		expand: true,
+		cwd : "<%= build %>",
+		src : [ "downloads/**/*.*", "favicon.ico" ],
+		dest : "<%= dist %>"
 	}
 };

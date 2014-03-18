@@ -9,8 +9,11 @@ module.exports = {
 	 */
 	headerjs : {
 		src : [
+			"<%= build %>/vendorlibs/jquery/jquery.js",
+			"<%= build %>/vendorlibs/jquery-migrate/jquery-migrate.js",
+			"<%= build %>/vendorlibs/modernizr/modernizr-custom.js",
 		],
-		dest : "<%= build %>/js/header.js"
+		dest : "<%= dist %>/js/header.js"
 	},
 
 	/**
@@ -20,11 +23,10 @@ module.exports = {
 	 * in IE only for instance.
 	 */
 	conditionaljs : {
-		/*
 		src : [
+			"<%= build %>/vendorlibs/selectivizr/selectivizr.js"
 		],
-		dest : ""
-		*/
+		dest : "<%= dist %>/js/conditional.js"
 	},
 
 	/**

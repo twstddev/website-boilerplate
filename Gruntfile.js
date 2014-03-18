@@ -20,16 +20,33 @@ module.exports = function( grunt ) {
 	} );
 
 	grunt.registerTask( "build", [
-		"copy",
+		"copy:images",
+		"copy:favicon",
+		"copy:downloads",
+		"copy:vendorjs",
+		"copy:vendorcss",
 		"assemble",
 		"compass",
 		"concat:js"
 	] );
 
 	grunt.registerTask( "development", [
-		"clean",
+		"clean:build",
 		"build",
 		"concurrent"
 	] );
 
+	grunt.registerTask( "default", [
+		"clean",
+		"build",
+		"copy:dist",
+		"usemin",
+		"modernizr",
+		"concat:headerjs",
+		"concat:conditionaljs",
+		"uglify",
+		"cssmin",
+		"imagemin",
+		"htmlmin"
+	] );
 }
