@@ -9,7 +9,7 @@ module.exports = {
 			open : true,
 
 			middleware : function( connect, options ) {
-				var base_path = options.base;
+				var base_path = options.base + "/";
 				var hostname = options.hostname;
 
 				return [
